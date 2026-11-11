@@ -1,0 +1,24 @@
+.badge {
+  width: 56px;
+  flex: none;
+  text-align: center;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.month {
+  background: var(--brand);
+  color: #fff;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 2px 0;
+}
+
+.day {
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--ink);
+  padding: 2px 0 4px;
+}

@@ -1,0 +1,14 @@
+.person {
+  min-width: 200px;
+}
+
+.search {
+  padding: 16px 24px 8px;
+  max-width: 468px;
+}
+
+@media (max-width: 719px) {
+  .search {
+    padding: 14px 16px 8px;
+  }
+}

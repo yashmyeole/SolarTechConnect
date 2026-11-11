@@ -1,0 +1,31 @@
+.search {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 8px;
+  padding: 8px;
+  max-width: 720px;
+}
+
+.searchButton {
+  height: 44px;
+}
+
+.icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+  background: var(--brand-weak-2);
+  color: var(--brand);
+  display: grid;
+  place-items: center;
+  flex: none;
+}
+
+.article {
+  margin: 6px 0;
+}
+
+.article button {
+  font-weight: 400;
+  text-align: left;
+}

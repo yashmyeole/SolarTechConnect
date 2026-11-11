@@ -1,0 +1,37 @@
+.note {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  padding: 14px 16px;
+  border-radius: var(--radius-sm);
+  background: var(--sunken);
+  font-size: 15px;
+}
+
+.icon {
+  margin-top: 2px;
+}
+
+.info {
+  background: var(--brand-weak);
+}
+
+.info .icon {
+  color: var(--brand);
+}
+
+.warn {
+  background: var(--warn-weak);
+}
+
+.warn .icon {
+  color: var(--warn);
+}
+
+.ok {
+  background: var(--ok-weak);
+}
+
+.ok .icon {
+  color: var(--ok);
+}

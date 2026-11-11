@@ -1,0 +1,78 @@
+.header {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  padding: 24px 28px;
+}
+
+.headline {
+  font-size: 17px;
+  color: var(--ink);
+}
+
+.actions {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-left: auto;
+  align-self: flex-start;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.gallery figcaption {
+  padding-top: 8px;
+}
+
+.entry {
+  display: flex;
+  gap: 14px;
+  padding: 14px 0;
+}
+
+.entry + .entry {
+  border-top: 1px solid var(--line);
+}
+
+.license {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.footnote {
+  padding: 10px 24px 16px;
+}
+
+.skill {
+  height: 30px;
+}
+
+.skillCount {
+  color: var(--text-3);
+  font-weight: 400;
+}
+
+@media (max-width: 719px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px 16px;
+    gap: 14px;
+  }
+
+  .actions {
+    margin-left: 0;
+  }
+
+  .gallery {
+    grid-template-columns: 1fr;
+  }
+
+  .footnote {
+    padding: 10px 16px 16px;
+  }
+}

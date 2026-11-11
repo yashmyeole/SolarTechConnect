@@ -1,0 +1,56 @@
+export const POSTS = [
+  {
+    id: 1,
+    author: { kind: 'member', id: 'deshawn-carter' },
+    time: '2h',
+    text: 'Wrapped a 412 kW rooftop job in Aurora today. Fourteen strings, zero punch-list items at walkthrough. Proud of this crew.',
+    photo: { tone: 'roof', label: 'Sample image · rooftop array, Aurora' },
+    likes: 48,
+    replies: [
+      { authorId: 'lena-fischer', text: 'Clean work. Who did your wire management?' },
+      {
+        authorId: 'deshawn-carter',
+        text: 'Hannah and Jorge. Pre-cut runs and labeled every home run the night before.',
+      },
+    ],
+  },
+  {
+    id: 2,
+    author: { kind: 'company', id: 'prairie-sun-epc' },
+    time: '5h',
+    text: 'We are hiring for three roles in Chicago. Crews are direct employees, and every new installer is paired with a lead for the first 60 days.',
+    jobIds: [1, 5, 7],
+    likes: 26,
+    replies: [],
+  },
+  {
+    id: 3,
+    author: { kind: 'member', id: 'priya-nair' },
+    time: '1d',
+    text: 'Passed the NABCEP PV Design Specialist exam this morning. Six months of evenings. Thank you to everyone in the Tuesday study group.',
+    likes: 91,
+    replies: [{ authorId: 'tom-okafor', text: 'Congratulations, well earned.' }],
+  },
+  {
+    id: 4,
+    author: { kind: 'member', id: 'tom-okafor' },
+    groupId: 'chicago-installers',
+    time: '1d',
+    text: 'What is your go-to method for labeling strings on big rooftop jobs? Looking for something faster than tape flags.',
+    likes: 12,
+    repliesOpen: true,
+    replies: [
+      { authorId: 'marcus-lee', text: 'Pre-printed heat-shrink labels, made the night before from the string map.' },
+      { authorId: 'hannah-kowalski', text: 'Color-coded zip ties by inverter, then label at the combiner.' },
+    ],
+  },
+  {
+    id: 5,
+    author: { kind: 'company', id: 'lakeshore-training' },
+    time: '2d',
+    text: 'Our OSHA 30 weekend cohort starts Saturday, December 5 in Gary. Six seats left.',
+    photo: { tone: 'canopy', label: 'Sample image · training lab' },
+    likes: 17,
+    replies: [],
+  },
+];

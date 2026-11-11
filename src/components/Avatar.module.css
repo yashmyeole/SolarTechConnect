@@ -1,0 +1,75 @@
+.avatar {
+  flex: none;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: inline-grid;
+  place-items: center;
+  font-weight: 600;
+  font-size: 16px;
+  color: #2b2530;
+  background: var(--avatar-color);
+}
+
+.company {
+  border-radius: 10px;
+  color: #fff;
+}
+
+.size24 {
+  width: 24px;
+  height: 24px;
+  font-size: 10.5px;
+}
+
+.size32 {
+  width: 32px;
+  height: 32px;
+  font-size: 12.5px;
+}
+
+.size36 {
+  width: 36px;
+  height: 36px;
+  font-size: 13.5px;
+}
+
+.size40 {
+  width: 40px;
+  height: 40px;
+  font-size: 14.5px;
+}
+
+.size56 {
+  width: 56px;
+  height: 56px;
+  font-size: 19px;
+}
+
+.size64 {
+  width: 64px;
+  height: 64px;
+  font-size: 22px;
+}
+
+.size96 {
+  width: 96px;
+  height: 96px;
+  font-size: 32px;
+}
+
+.company.size24 {
+  border-radius: 6px;
+}
+
+.company.size32 {
+  border-radius: 7px;
+}
+
+.company.size40 {
+  border-radius: 8px;
+}
+
+.company.size64 {
+  border-radius: 14px;
+}

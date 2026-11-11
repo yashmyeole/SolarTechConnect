@@ -1,0 +1,194 @@
+.searchBar {
+  display: grid;
+  grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr) auto;
+  gap: 8px;
+  padding: 8px;
+  margin-bottom: 12px;
+}
+
+.searchButton {
+  height: 44px;
+}
+
+.filterChip {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  height: 34px;
+  padding: 0 8px 0 12px;
+  border: 1px solid var(--line-2);
+  border-radius: var(--radius-sm);
+  background: #fff;
+  color: var(--ink);
+  font-size: 13.5px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.filterChip:hover {
+  border-color: var(--text-3);
+}
+
+.badge {
+  display: inline-grid;
+  place-items: center;
+  min-width: 20px;
+  height: 20px;
+  padding: 0 5px;
+  border-radius: 10px;
+  background: var(--brand);
+  color: #fff;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.applied {
+  color: var(--ok);
+  font-weight: 600;
+}
+
+.resumeSwitch {
+  align-self: flex-start;
+  margin-left: -10px;
+}
+
+.facts {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 8px;
+  margin-top: 18px;
+}
+
+.facts > div {
+  background: var(--sunken);
+  border-radius: 10px;
+  padding: 10px 14px;
+}
+
+.factLabel {
+  display: block;
+  font-size: 13px;
+  color: var(--text-3);
+}
+
+.factValue {
+  display: block;
+  font-weight: 700;
+  color: var(--ink);
+  font-size: 15.5px;
+}
+
+.appliedChip {
+  height: 34px;
+}
+
+.applyBar {
+  display: none;
+}
+
+.tracker {
+  display: flex;
+  gap: 6px;
+  margin-top: 12px;
+}
+
+.tracker li {
+  flex: 1;
+  padding-top: 8px;
+  border-top: 3px solid var(--line);
+  font-size: 13px;
+  color: var(--text-3);
+  min-width: 0;
+}
+
+.tracker .done {
+  border-color: var(--brand);
+  color: var(--text-2);
+}
+
+.tracker .current {
+  border-color: var(--accent);
+  color: var(--ink);
+  font-weight: 700;
+}
+
+.application {
+  padding: 18px 24px;
+}
+
+.filterGroup {
+  padding: 14px 24px;
+}
+
+.filterGroup + .filterGroup {
+  border-top: 1px solid var(--line);
+}
+
+.drawerFooter {
+  justify-content: space-between;
+}
+
+.applicant {
+  padding: 12px 14px;
+  background: var(--sunken);
+  border-radius: 10px;
+}
+
+.resume {
+  padding: 12px 14px;
+  border: 1px solid var(--brand);
+  border-radius: 10px;
+  gap: 12px;
+}
+
+.resume input {
+  accent-color: var(--brand);
+  width: 18px;
+  height: 18px;
+}
+
+@media (max-width: 899px) {
+  .facts {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 719px) {
+  .searchBar {
+    grid-template-columns: 1fr;
+  }
+
+  .withApplyBar {
+    padding-bottom: 110px;
+  }
+
+  .applyBar {
+    display: flex;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 60px;
+    z-index: 45;
+    background: #fff;
+    border-top: 1px solid var(--line);
+    padding: 10px 14px;
+    gap: 10px;
+    align-items: center;
+  }
+
+  .visitor .applyBar {
+    bottom: 0;
+  }
+
+  .application {
+    padding: 16px;
+  }
+
+  .tracker li {
+    font-size: 11.5px;
+  }
+
+  .factValue {
+    font-size: 14.5px;
+  }
+}

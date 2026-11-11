@@ -1,0 +1,52 @@
+.photo {
+  position: relative;
+  overflow: hidden;
+  aspect-ratio: 16 / 9;
+  border-radius: 10px;
+}
+
+.photo::before {
+  content: '';
+  position: absolute;
+  left: -18%;
+  right: -18%;
+  bottom: -6%;
+  height: 62%;
+  transform: perspective(560px) rotateX(57deg);
+  transform-origin: 50% 100%;
+  background:
+    repeating-linear-gradient(90deg, rgba(214, 226, 240, 0.5) 0 2px, transparent 2px 7.6%),
+    repeating-linear-gradient(0deg, rgba(214, 226, 240, 0.45) 0 2px, transparent 2px 15%),
+    linear-gradient(180deg, #34465f, #1f2c40);
+}
+
+.roof {
+  background: linear-gradient(180deg, #c9d3df 0%, #e8ecf0 50%, #c9cdbb 50%, #b2b8a0 100%);
+}
+
+.dawn {
+  background: linear-gradient(180deg, #e9cfbb 0%, #f5e9de 48%, #b9b2a6 48%, #a09a8e 100%);
+}
+
+.canopy {
+  background: linear-gradient(180deg, #d2d6dc 0%, #f0f1f3 40%, #7f838a 40%, #676b72 100%);
+}
+
+.canopy::before {
+  bottom: 6%;
+  height: 46%;
+  left: 8%;
+  right: 8%;
+  transform: perspective(500px) rotateX(38deg);
+}
+
+.label {
+  position: absolute;
+  left: 10px;
+  bottom: 10px;
+  background: rgba(28, 24, 30, 0.72);
+  color: #fff;
+  font-size: 12.5px;
+  padding: 2px 8px;
+  border-radius: 4px;
+}

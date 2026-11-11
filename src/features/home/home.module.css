@@ -1,0 +1,21 @@
+.nextUp {
+  font-size: 17px;
+}
+
+.meter {
+  height: 6px;
+  border-radius: 3px;
+  background: var(--line);
+  overflow: hidden;
+}
+
+.meter i {
+  display: block;
+  height: 100%;
+  background: var(--brand);
+}
+
+.views {
+  padding-top: 12px;
+  border-top: 1px solid var(--line);
+}

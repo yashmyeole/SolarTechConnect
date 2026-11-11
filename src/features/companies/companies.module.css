@@ -1,0 +1,25 @@
+.name {
+  font-size: 17px;
+}
+
+.header {
+  padding: 24px 28px;
+}
+
+.tagline {
+  font-size: 17px;
+}
+
+.headerText {
+  min-width: 220px;
+}
+
+.note {
+  margin-bottom: 16px;
+}
+
+@media (max-width: 719px) {
+  .header {
+    padding: 16px;
+  }
+}
